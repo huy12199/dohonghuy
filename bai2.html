@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+<script>
+    let z = prompt("nhập chiều dài mảng");
+    let A = [];
+    let check = false;
+    for (let i = 0; i < z; i++) {
+        A[i] = prompt("nhập các giá trị trong mảnh ")
+        console.log(A[i])
+    }
+    let n = prompt("nhập vào số n")
+    function tryRemoveFromArray(){
+        for (let i = 0; i < A.length; i++) {
+            if (A[i]===n){
+                A.splice(i,1)
+            }
+            console.log(A[i])
+        }
+
+    }
+    tryRemoveFromArray(n)
+</script>
